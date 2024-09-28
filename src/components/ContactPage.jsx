@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'; // Import React Icons
 import breadcrumbBg1 from '../assets/imgs/resources/page-title-bg-1.png';
 import breadcrumbBg2 from '../assets/imgs/resources/page-title-bg-2.png';
@@ -24,7 +25,7 @@ const ContactPage = () => {
                 <div className="breadcrumb__menu">
                   <nav>
                     <ul>
-                    <li><span><a className='links' href="index.html">Home</a></span></li>
+                    <li><span><Link className='links' href="index.html">Home</Link></span></li>
                     <i className="fa fa-arrow-right"></i><li><span>Contact</span></li>
                     </ul>
                   </nav>
@@ -56,7 +57,7 @@ const ContactPage = () => {
                   </div>
                   <div className="info">
                     <span>Call Us 7/24</span>
-                    <h4><a href="tel:2085550112">+919717656550</a></h4>
+                    <h4><Link href="tel:2085550112">+919717656550</Link></h4>
                   </div>
                 </div>
                 <div className="contact-box">
@@ -65,7 +66,7 @@ const ContactPage = () => {
                   </div>
                   <div className="info">
                     <span>Make A quote</span>
-                    <h4><a href="mailto:Info@wotech.com">softmechsolutions@gmail.com</a></h4>
+                    <h4><Link href="mailto:Info@wotech.com">softmechsolutions@gmail.com</Link></h4>
                   </div>
                 </div>
               </div>

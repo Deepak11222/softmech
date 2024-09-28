@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import shape1 from '../assets/imgs/shapes/shape-50.png';
 import shape2 from '../assets/imgs/footer/shape-f-1.png';
@@ -22,10 +23,10 @@ const Footer = () => {
 
 </p>
                   <div className="footer-socials p-relative">
-                    <span><a className="links" href="#"><i className="fab fa-facebook-f"></i></a></span>
-                    <span><a className="links" href="#"><i className="fab fa-twitter"></i></a></span>
-                    <span><a className="links" href="#"><i className="fab fa-linkedin-in"></i></a></span>
-                    <span><a className="links" href="#"><i className="fab fa-youtube"></i></a></span>
+                    <span><Link className="links" to="#"><i className="fab fa-facebook-f"></i></Link></span>
+                    <span><Link className="links" to="#"><i className="fab fa-twitter"></i></Link></span>
+                    <span><Link className="links" to="#"><i className="fab fa-linkedin-in"></i></Link></span>
+                    <span><Link className="links" to="#"><i className="fab fa-youtube"></i></Link></span>
                   </div>
                 </div>
               </div>
@@ -33,11 +34,11 @@ const Footer = () => {
                 <div className="footer-widget-2 pl-50">
                   <h4 className="mb-30 footer-title" style={{ marginLeft: '15px' }}>Quick Links</h4>
                   <ul className="service-list">
-                    <li><i className="fa fa-arrow-right"></i> <a className="links" href="about.html">About Us</a></li>
-                    <li><i className="fa fa-arrow-right"></i> <a className="links" href="team.html">Our Team</a></li>
-                    <li><i className="fa fa-arrow-right"></i> <a className="links" href="services.html">Our Services</a></li>
-                    <li><i className="fa fa-arrow-right"></i> <a className="links" href="blog-grid.html">Latest Blog</a></li>
-                    <li><i className="fa fa-arrow-right"></i> <a className="links" href="contact.html">Contact Us</a></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link className="links" to="about.html">About Us</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link className="links" to="team.html">Our Team</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link className="links" to="services.html">Our Services</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link className="links" to="blog-grid.html">Latest Blog</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link className="links" to="contact.html">Contact Us</Link></li>
                   </ul>
                 </div>
               </div>
@@ -45,11 +46,11 @@ const Footer = () => {
                 <div className="footer-widget-2">
                   <h4 className="mb-30 footer-title" style={{ marginLeft: '15px' }}>Our Services</h4>
                   <ul className="service-list">
-                    <li><i className="fa fa-arrow-right"></i> <a className="links" href="service-details.html">IT Management</a></li>
-                    <li><i className="fa fa-arrow-right"></i> <a className="links" href="service-details.html">SEO Optimization</a></li>
-                    <li><i className="fa fa-arrow-right"></i> <a className="links" href="service-details.html">Web Development</a></li>
-                    <li><i className="fa fa-arrow-right"></i> <a className="links" href="service-details.html">Cyber Security</a></li>
-                    <li><i className="fa fa-arrow-right"></i> <a className="links" href="service-details.html">Data Security</a></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link className="links" to="service-details.html">IT Management</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link className="links" to="service-details.html">SEO Optimization</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link className="links" to="service-details.html">Web Development</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link className="links" to="service-details.html">Cyber Security</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link className="links" to="service-details.html">Data Security</Link></li>
                   </ul>
                 </div>
               </div>
@@ -72,7 +73,7 @@ const Footer = () => {
                       </div>
                       <div className="info-details">
                         <h6 className="mb-10">Phone Call:</h6>
-                        <a href="tel:20866660112" style={{ color: 'white', textDecoration: 'none' }}>+919717656550</a>, 
+                        <Link to="tel:20866660112" style={{ color: 'white', textDecoration: 'none' }}>+919717656550</Link>, 
                       </div>
                     </li>
                     <li>
@@ -93,11 +94,11 @@ const Footer = () => {
         <div className="small-container">
           <div className="footer-bottom pt-30 pb-30 p-relative">
             <div className="left-area">
-              <span>© All Copyright 2024 by <a className="links" href="#">wotech</a></span>
+              <span>© All Copyright 2024 by <Link className="links" to="#">wotech</Link></span>
             </div>
             <div className="right-area">
-              <span><a className="links" href="#">Terms &amp; Condition <i className="fa fa-arrow-right"></i></a></span>
-              <span><a className="links" href="#">Privacy Policy <i className="fa fa-arrow-right"></i></a></span>
+              <span><Link className="links" to="#">Terms &amp; Condition <i className="fa fa-arrow-right"></i></Link></span>
+              <span><Link className="links" to="#">Privacy Policy <i className="fa fa-arrow-right"></i></Link></span>
             </div>
           </div>
         </div>
