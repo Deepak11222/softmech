@@ -35,7 +35,7 @@ const Main = () => {
         <div className="row g-0">
           <div className="col-xxl-7">
             <div className="banner-3-content p-relative bg-color-1">
-            <div className="shape-1" style={{ backgroundImage: `url(${shape1})` }}></div>
+            {/* <div className="shape-1" style={{ backgroundImage: `url(${shape1})` }}></div> */}
             <div className="shape-2" style={{ backgroundImage: `url(${shape2})` }}></div>
               <div className="shape-3 float-bob-y" style={{ backgroundImage: 'url(assets/imgs/shapes/shape-41.png)' }}></div>
               <div className="banner-area-2 img-custom-anim-left animated" style={{ animationDelay: '2000ms' }}>
@@ -223,7 +223,7 @@ const Main = () => {
       </div>
     </section>
 
-    <ProjectSliderSection/>
+    {/* <ProjectSliderSection/> */}
 
     {/* <section className="faq-section bg-color-1 p-relative mb-20">
       <div
