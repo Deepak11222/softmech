@@ -44,12 +44,12 @@ const Main = () => {
                 <p className="banner-text">
                 At Softmech Solutions, we specialize in transforming your business ideas into robust, cutting-edge technology solutions. With over 5+ years of experience in the IT industry, our team of seasoned professionals is dedicated to delivering innovation, quality, and reliability. <br />
                 </p>
-                <div className="banner-btn-area-2">
+                {/* <div className="banner-btn-area-2">
   <a className="primary-btn-1 btn-hover" href="services.html">
     GET A QUOTE &nbsp; | <i className="fa fa-arrow-right"></i>
     <span style={{ top: '147.172px', left: '108.5px' }}></span>
   </a>
-</div>
+</div> */}
               </div>
             </div>
           </div>
