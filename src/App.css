@@ -1026,11 +1026,11 @@ figure{
 }
 
 .section-space-medium {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-space-medium {
-    padding: 80px 0;
+    padding: 44px 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5676,7 +5676,7 @@ width: 100%;
 }
 
 .banner-3-content .banner-area-2 {
-  padding: 150px 150px;
+  padding: 91px 150px;
 }
                   
 }
@@ -6503,8 +6503,6 @@ transform: skewX(-25deg);
   gap: 12px;
   font-weight: 500;
 }
-
-
 
 
 /* .breadcrumb__wrapper ul span:before {

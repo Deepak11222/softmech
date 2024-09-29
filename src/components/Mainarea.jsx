@@ -42,7 +42,7 @@ const Main = () => {
                 <span className="p-relative banner-sub-title no-border"><SiIcomoon style={{ color: '#3c72fc' }} /> TECHNOLOGY RELATED CONSULTANCY</span>
                 <h1 className="banner-title">Welcome to Softmech Solutions</h1>
                 <p className="banner-text">
-                At Softmech Solutions, we specialize in transforming your business ideas into robust, cutting-edge technology solutions. With over 25 years of experience in the IT industry, our team of seasoned professionals is dedicated to delivering innovation, quality, and reliability. <br />
+                At Softmech Solutions, we specialize in transforming your business ideas into robust, cutting-edge technology solutions. With over 5+ years of experience in the IT industry, our team of seasoned professionals is dedicated to delivering innovation, quality, and reliability. <br />
                 </p>
                 <div className="banner-btn-area-2">
   <a className="primary-btn-1 btn-hover" href="services.html">
@@ -101,7 +101,7 @@ const Main = () => {
     </section>
 
     <AboutSection/>
-
+{/* 
     <section className="help-3-form-section p-relative z-1">
       <div className="small-container">
         <div className="help-3-form-area p-relative">
@@ -135,7 +135,7 @@ const Main = () => {
           </form>
         </div>
       </div>
-    </section>
+    </section> */}
     <ServiceSection/>
 
     <section 
@@ -366,7 +366,7 @@ const Main = () => {
       </div>
     </section> */}
 
-    <BlogSection/>
+    {/* <BlogSection/> */}
     {/* <BackToTop/> */}
     {/* <NewsSection/> */}
 

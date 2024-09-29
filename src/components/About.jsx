@@ -18,7 +18,7 @@ const AboutSection = () => {
         <div className="row">
           <div className="col-xxl-6 col-xl-6 col-lg-6">
             <div className="about-3-image-area p-relative">
-              <div className="shape-1" style={{ backgroundImage: `url(${shape1})` }}></div>
+              {/* <div className="shape-1" style={{ backgroundImage: `url(${shape1})` }}></div> */}
               <figure className="image w-img pr-60">
                 <img src={aboutImage} alt="About Us" />
               </figure>
@@ -51,7 +51,7 @@ const AboutSection = () => {
             </div>
           </div>
 
-              <div className="about-3-progress-bar p-relative">
+              {/* <div className="about-3-progress-bar p-relative">
                 <h6>Quality Services</h6>
                 <div className="progress">
                   <div
@@ -64,7 +64,7 @@ const AboutSection = () => {
                   ></div>
                 </div>
                 <span className="progress-count">95%</span>
-              </div>
+              </div> */}
               <a className="primary-btn-1 btn-hover mt-50" href="about.html">
                 about us &nbsp; |<i className="fa fa-arrow-right"></i>
               </a>

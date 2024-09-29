@@ -29,27 +29,7 @@ const Header = () => {
   };
 
   return (
-    <header>
-      <div className="container-fluid bg-color-1">
-        <div className="header-top">
-          <div className="header-top-contact-info">
-            <span className="email p-relative">
-              <i className="fas fa-envelope"></i>
-              <Link className='links' to="mailto:softmech@gmail.com"> softmech@gmail.com</Link>
-            </span>
-            <span className="time p-relative">
-              <i className="fas fa-clock" style={{ marginRight: '5px' }}></i>
-              Hours: Mon - Sat: 10.00 AM - 4.00 PM
-            </span>
-          </div>
-          <div className="header-top-socials">
-            <span><Link className='links' to="#"><i className="fab fa-facebook-f" /></Link></span>
-            <span><Link className='links' to="#"><i className="fab fa-twitter" /></Link></span>
-            <span><Link className='links' to="#"><i className="fab fa-linkedin-in" /></Link></span>
-            <span><Link className='links' to="#"><i className="fab fa-youtube" /></Link></span>
-          </div>
-        </div>
-      </div>
+<header style={{marginTop:'-10px', marginBottom:"-22px"}}>
       <div id="header-sticky" className="header-area">
         <div className="large-container">
           <div className="mega-menu-wrapper">
@@ -133,13 +113,29 @@ const Header = () => {
                     <Link className='links' to="#"><i className="icon-shopping-cart" /></Link>
                   </div>
                 </div>
-                <div className="header-action d-none d-xl-inline-flex gap-5">
-                  <div className="header-link">
-                    <Link className="primary-btn-1 btn-hover links" to="/contact">
-                      GET A QUOTE &nbsp; | <i className="icon-right-arrow" />
-                    </Link>
-                  </div>
-                </div>
+                <div
+  className="header-action d-none d-xl-inline-flex gap-5"
+  style={{ fontSize: '14px' }} // Making the text size smaller
+>
+  <div className="header-link">
+    <Link
+      className="primary-btn-1 btn-hover links"
+      to="/contact"
+      style={{
+        marginLeft: '55px',
+        borderRadius: '5px', // Adding border-radius
+        padding: '8px 16px',  // Adjusting padding for a smaller button
+        fontSize: '13px',     // Optional: Reducing text size inside button
+        display: 'inline-flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      GET A QUOTE &nbsp;
+    </Link>
+  </div>
+</div>
+
                 <div className="header-action">
                   <div className="header-link-1">
                     <div className="icon">

@@ -1,4 +1,7 @@
 import React from 'react';
+import { MdMiscellaneousServices } from "react-icons/md";
+import { MdSecurity } from 'react-icons/md'; // Safety and Reliability
+import { MdAnnouncement } from 'react-icons/md'; // Mission Statement
 import aboutImage1 from '../assets/imgs/resources/page-title-bg-1.png';
 import aboutImage2 from '../assets/imgs/resources/page-title-bg-2.png';
 import aboutImage3 from '../assets/imgs/bg/bg-shape-1.png';
@@ -7,6 +10,8 @@ import aboutImage5 from '../assets/imgs/about/about-1.jpg';
 import aboutImage6 from '../assets/imgs/about/about-2.jpg';
 import aboutImage7 from '../assets/imgs/about/about-three-icon1.png';
 import aboutImage8 from '../assets/imgs/about/about-three-icon2.png';
+import chooseBg from '../assets/imgs/bg/choose-bg.png';
+import chooseImg from '../assets/imgs/resources/choose-1.png';
 import chooseBgImage from '../assets/imgs/bg/choose-bg.png';
 import chooseShapeImage from '../assets/imgs/shapes/shape-15.png';
 import processBg from '../assets/imgs/bg/process-bg.png';
@@ -77,7 +82,7 @@ const AboutPage = () => {
                   <div className="inner p-relative">
                     <div className="icon-box">
                       <i className="icon-prize"></i>
-                      <h4><span className="counter">15</span> Years</h4>
+                      <h4><span className="counter">5+</span> Years</h4>
                       <p>Experience in IT Solutions</p>
                     </div>
                   </div>
@@ -93,7 +98,7 @@ const AboutPage = () => {
                   <h3 className="section-title mt-10">Your Trusted IT Partner</h3>
                 </div>
                 <p className="mb-35 wow fadeInLeft" data-wow-delay=".5s">
-                  At SoftMech Solutions, we pride ourselves on being a premier IT service provider dedicated to delivering innovative and efficient solutions tailored to our clients' needs. With over 15 years of experience in the industry, our team of experts is equipped with the skills and knowledge to help your business thrive in the digital age.
+                  At SoftMech Solutions, we pride ourselves on being a premier IT service provider dedicated to delivering innovative and efficient solutions tailored to our clients' needs. With over 5+ years of experience in the industry, our team of experts is equipped with the skills and knowledge to help your business thrive in the digital age.
                 </p>
                 <div className="icon-box mb-20 wow fadeInLeft" data-wow-delay=".8s">
                   <div className="icon">
@@ -129,8 +134,8 @@ const AboutPage = () => {
 
       {/* Choose area start */}
       <section className="choose-section bg-color-1 section-space-top p-relative">
-        <div className="bg-image" style={{ backgroundImage: `url(${chooseBgImage})` }}></div>
-        <div className="shape-image" style={{ backgroundImage: `url(${chooseShapeImage})` }}></div>
+        <div className="bg-image" style={{ backgroundImage: `url(${chooseBg})` }}></div>
+        <div className="shape-image" style={{ backgroundImage: `url(assets/imgs/shapes/shape-15.png)` }}></div>
         <div className="small-container">
           <div className="row g-4">
             <div className="col-xxl-6 col-xl-6 col-lg-6 p-relative section-space-medium-bottom">
@@ -138,43 +143,49 @@ const AboutPage = () => {
                 <span className="section-sub-title">Why Choose Us</span>
                 <h3 className="section-title mt-10">What Makes Us Different</h3>
               </div>
-              {/* Block */}
+              {/* Block 1 */}
               <div className="choose-area-icon-box mb-15 wow fadeInRight" data-wow-delay=".5s">
                 <div className="icon-box p-relative">
-                  <i className="icon-roof-4"></i>
+                  <MdMiscellaneousServices size={30} />
                 </div>
                 <div className="content">
-                  <h5><a className='link' href="services.html">Tailored Solutions</a></h5>
-                  <p>We provide customized IT solutions that fit your specific business requirements and objectives.</p>
+                  <h5>
+                    <a className='link' href="services.html">Commercial Service</a>
+                  </h5>
+                  <p>Our diverse range of services is tailored to meet the unique needs of each client, ensuring comprehensive support and solutions.</p>
                 </div>
               </div>
               <hr />
-              {/* Block */}
+              {/* Block 2 */}
               <div className="choose-area-icon-box mb-15 wow fadeInRight" data-wow-delay=".7s">
                 <div className="icon-box p-relative">
-                  <i className="icon-target"></i>
+                  <MdAnnouncement size={30} />
                 </div>
                 <div className="content">
-                  <h5><a className='link' href="services.html">Client-Centric Approach</a></h5>
-                  <p>Your satisfaction is our priority. We work closely with you to ensure our services meet your expectations.</p>
+                  <h5>
+                    <a className='link'  href="services.html">Mission Statement</a>
+                  </h5>
+                  <p>At SoftMech Solutions, we strive to deliver innovative technology solutions that empower businesses and drive success.</p>
                 </div>
               </div>
               <hr />
-              {/* Block */}
+              {/* Block 3 */}
               <div className="choose-area-icon-box mb-15 wow fadeInRight" data-wow-delay=".9s">
                 <div className="icon-box p-relative">
-                  <i className="icon-help"></i>
+                  <MdSecurity size={30} />
                 </div>
                 <div className="content">
-                  <h5><a className='link' href="services.html">Reliable Support</a></h5>
-                  <p>Our dedicated support team is available to assist you whenever you need help, ensuring seamless operations.</p>
+                  <h5>
+                    <a className='link'  href="services.html">Safety and Reliability</a>
+                  </h5>
+                  <p>We prioritize safety and reliability in all our solutions, ensuring peace of mind for our clients through robust security measures.</p>
                 </div>
               </div>
               <hr />
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 wow fadeInLeft" data-wow-delay="1.2s">
               <figure className="image m-img">
-                <img src={chooseImage} alt="Choose Us" />
+                <img src={chooseImg} alt="Choose Us" />
               </figure>
             </div>
           </div>
