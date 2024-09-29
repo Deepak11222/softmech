@@ -48,15 +48,6 @@ const Header = () => {
                     <ul>
   <li className="has-dropdown active">
     <Link className='links' to="/">Home</Link>
-    <ul className="submenu">
-      <li>
-        <Link className='links' to="/">Home One</Link>
-        <i className="fas fa-chevron-down" style={{ fontSize: '16px', color: 'white', marginLeft: '8px' }}></i>
-      </li>
-      <li><Link className='links' to="/index-2">Home Two</Link></li>
-      <li><Link className='links' to="/index-3">Home Three</Link></li>
-      <li><Link className='links' to="/dark-home">Home Dark</Link></li>
-    </ul>
   </li>
   <li><Link className='links' to="/about">About</Link></li>
   <li>
@@ -78,18 +69,18 @@ const Header = () => {
       </li>
       <li><Link className='links' to="/team">Team</Link></li>
       <li><Link className='links' to="/team-details">Team Details</Link></li>
-      <li><Link className='links' to="/faq">Faq's</Link></li>
+      {/* <li><Link className='links' to="/faq">Faq's</Link></li> */}
       <li><Link className='links' to="/error">Error Page</Link></li>
     </ul>
   </li>
-  <li className="has-dropdown">
+  {/* <li className="has-dropdown">
     <Link className='links' to="/blog-grid">Blog</Link>
     <ul className="submenu">
       <li><Link className='links' to="/blog-standard">Blog Default</Link></li>
       <li><Link className='links' to="/blog-grid">Blog Grid</Link></li>
       <li><Link className='links' to="/blog-details">Blog Details</Link></li>
     </ul>
-  </li>
+  </li> */}
   <li><Link className='links' to="/contact">Contact</Link></li>
 </ul>
 
@@ -122,7 +113,7 @@ const Header = () => {
       className="primary-btn-1 btn-hover links"
       to="/contact"
       style={{
-        marginLeft: '55px',
+        marginLeft: '80px',
         borderRadius: '5px', // Adding border-radius
         padding: '8px 16px',  // Adjusting padding for a smaller button
         fontSize: '13px',     // Optional: Reducing text size inside button
@@ -192,7 +183,7 @@ const Header = () => {
         <nav className={`mean-nav ${menuOpen ? 'open' : ''}`}>
         <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
         <li className="has-dropdown active">
-          <Link to="#!" onClick={() => toggleSubMenu(0)} style={{ cursor: 'pointer' }}>Home</Link>
+          <Link to="/" onClick={() => toggleSubMenu(0)} style={{ cursor: 'pointer' }}>Home</Link>
           <ul className="submenu" style={{ display: subMenuOpen[0] ? 'block' : 'none', padding: '0' }}>
             {/* <li><Link to="index.html">Home One</Link></li>
             <li><Link to="index-2.html">Home Two</Link></li>
@@ -222,7 +213,7 @@ const Header = () => {
             </li>
             <li><Link to="/team">Team</Link></li>
             <li><Link to="/team-details">Team Details</Link></li>
-            <li><Link to="/faq">Faq's</Link></li>
+            {/* <li><Link to="/faq">Faq's</Link></li> */}
           </ul>
         </li>
         {/* <li className="has-dropdown">
@@ -240,35 +231,53 @@ const Header = () => {
         </nav>
       </div>
     </div>
-      <div className="offcanvas__contact mt-30 mb-20">
-        <h4>Contact Info</h4>
-        <ul>
-          <li className="d-flex align-items-center">
-            <div className="offcanvas__contact-icon mr-15">
-            <i className="fa fa-map-marker" aria-hidden="true"></i>
-            </div>
-            <div className="offcanvas__contact-text">
-              <Link target="_blank" rel="noopener noreferrer" to="#">31 Park End St, Brockhampton, UK</Link>
-            </div>
-          </li>
-          <li className="d-flex align-items-center">
-            <div className="offcanvas__contact-icon mr-15">
-            <i className="fa fa-phone" aria-hidden="true"></i>
-            </div>
-            <div className="offcanvas__contact-text">
-              <Link to="tel:+00112233665">+00112233665</Link>
-            </div>
-          </li>
-          <li className="d-flex align-items-center">
-            <div className="offcanvas__contact-icon mr-15">
-            <i className="fas fa-envelope"></i>
-            </div>
-            <div className="offcanvas__contact-text">
-              <Link to="mailto:support@example.com">support@example.com</Link>
-            </div>
-          </li>
-        </ul>
+    <div className="offcanvas__contact mt-30 mb-20">
+  <h4>Contact Info</h4>
+  <ul>
+    <li className="d-flex align-items-center">
+      <div className="offcanvas__contact-icon mr-15">
+        <i className="fa fa-map-marker" aria-hidden="true"></i>
       </div>
+      <div className="offcanvas__contact-text">
+        <Link 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          to="#" 
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
+          SOFTMECH SOLUTION Office No. 6, Near Cherry County, Greater Noida West UP.
+        </Link>
+      </div>
+    </li>
+    <li className="d-flex align-items-center">
+      <div className="offcanvas__contact-icon mr-15">
+        <i className="fa fa-phone" aria-hidden="true"></i>
+      </div>
+      <div className="offcanvas__contact-text">
+        <Link 
+          to="tel:+00112233665" 
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
+          +919717656550
+        </Link>
+      </div>
+    </li>
+    <li className="d-flex align-items-center">
+      <div className="offcanvas__contact-icon mr-15">
+        <i className="fas fa-envelope"></i>
+      </div>
+      <div className="offcanvas__contact-text">
+        <Link 
+          to="mailto:support@example.com" 
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
+          info@softmechsolution.com
+        </Link>
+      </div>
+    </li>
+  </ul>
+</div>
+
       <div className="offcanvas__social">
   <ul>
     <li>

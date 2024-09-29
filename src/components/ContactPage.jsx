@@ -48,7 +48,7 @@ const ContactPage = () => {
                   </div>
                   <div className="info">
                     <span>Location</span>
-                    <h4>Greater Noida, India</h4>
+                    <h4>SOFTMECH SOLUTION Office No. 6, Near Cherry County, Greater Noida West UP.</h4>
                   </div>
                 </div>
                 <div className="contact-box mb-30">
@@ -57,7 +57,7 @@ const ContactPage = () => {
                   </div>
                   <div className="info">
                     <span>Call Us 7/24</span>
-                    <h4><Link href="tel:2085550112">+919717656550</Link></h4>
+                    <h4><Link to="tel:+919717656550">+919717656550</Link></h4>
                   </div>
                 </div>
                 <div className="contact-box">
@@ -66,7 +66,7 @@ const ContactPage = () => {
                   </div>
                   <div className="info">
                     <span>Make A quote</span>
-                    <h4><Link href="mailto:Info@wotech.com">softmechsolutions@gmail.com</Link></h4>
+                    <h4><Link to="#">info@softmechsolutiongmail.com</Link></h4>
                   </div>
                 </div>
               </div>
@@ -117,14 +117,14 @@ const ContactPage = () => {
       <div className="container-fluid g-0 fix">
         <div className="row">
           <div className="col-xxl-12">
-            <div className="contact-map">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4216.433331900906!2d90.36996032419312!3d23.83718617432321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1693682874850!5m2!1sen!2sbd" 
-                style={{ width: '100%', height: '400px', border: 0 }} 
-                allowFullScreen 
-                loading="lazy"
-              ></iframe>
-            </div>
+          <div className="contact-map">
+  <iframe 
+    src="https://www.google.com/maps/embed/v1/place?q=Softmech+Solutions,+Office+No.+6,+Near+Cherry+County,+Greater+Noida West UP.&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" 
+    style={{ width: '100%', height: '400px', border: 0 }} 
+    allowFullScreen 
+    loading="lazy"
+  ></iframe>
+</div>
           </div>
         </div>
       </div>

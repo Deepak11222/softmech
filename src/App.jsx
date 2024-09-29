@@ -14,7 +14,6 @@ import Projects from './components/Projects';
 import ProjectDetails from './components/ProjectDetails';
 import TeamSection from './components/Team';
 import TeamMemberDetails from './components/TeamMember';
-import FaqPage from './components/FaqPage';
 import BlogPage from './components/Blog';
 import ContactPage from './components/ContactPage';
 import WhatsAppWidget from './components/Whatsapp';
@@ -31,7 +30,6 @@ function App() {
         <Route path="/project-details" element={<ProjectDetails />} /> {/* Updated to use element prop */}
         <Route path="/team" element={<TeamSection />} /> {/* Updated to use element prop */}
         <Route path="/team-details" element={<TeamMemberDetails />} /> {/* Updated to use element prop */}
-        <Route path="/faq" element={<FaqPage />} /> {/* Updated to use element prop */}
         <Route path="/blog-grid" element={<BlogPage />} /> {/* Updated to use element prop */}
         <Route path="/contact" element={<ContactPage />} /> {/* Updated to use element prop */}
         {/* You can add more routes here as needed */}

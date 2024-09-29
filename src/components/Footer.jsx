@@ -43,11 +43,11 @@ const Footer = () => {
                 <div className="footer-widget-2">
                   <h4 className="mb-30 footer-title" style={{ marginLeft: '15px' }}>Quick Links</h4>
                   <ul className="service-list">
-                    <li><i className="fa fa-arrow-right"></i> <Link to="service-details.html" style={linkStyle}>About Us</Link></li>
-                    <li><i className="fa fa-arrow-right"></i> <Link to="service-details.html" style={linkStyle}>Our Team</Link></li>
-                    <li><i className="fa fa-arrow-right"></i> <Link to="service-details.html" style={linkStyle}>Our Services</Link></li>
-                    <li><i className="fa fa-arrow-right"></i> <Link to="service-details.html" style={linkStyle}>Projects</Link></li>
-                    <li><i className="fa fa-arrow-right"></i> <Link to="service-details.html" style={linkStyle}>Contact Us</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link to="/about" style={linkStyle}>About Us</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link to="/team-details" style={linkStyle}>Our Team</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link to="/services" style={linkStyle}>Our Services</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link to="/projects" style={linkStyle}>Projects</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link to="/contact" style={linkStyle}>Contact Us</Link></li>
                   </ul>
                 </div>
               </div>
@@ -55,11 +55,11 @@ const Footer = () => {
                 <div className="footer-widget-2">
                   <h4 className="mb-30 footer-title" style={{ marginLeft: '15px' }}>Our Services</h4>
                   <ul className="service-list">
-                    <li><i className="fa fa-arrow-right"></i> <Link to="service-details.html" style={linkStyle}>IT Management</Link></li>
-                    <li><i className="fa fa-arrow-right"></i> <Link to="service-details.html" style={linkStyle}>SEO Optimization</Link></li>
-                    <li><i className="fa fa-arrow-right"></i> <Link to="service-details.html" style={linkStyle}>Web Development</Link></li>
-                    <li><i className="fa fa-arrow-right"></i> <Link to="service-details.html" style={linkStyle}>Cyber Security</Link></li>
-                    <li><i className="fa fa-arrow-right"></i> <Link to="service-details.html" style={linkStyle}>Data Security</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link to="#" style={linkStyle}>IT Management</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link to="#" style={linkStyle}>SEO Optimization</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link to="#" style={linkStyle}>Web Development</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link to="#" style={linkStyle}>Cyber Security</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link to="#" style={linkStyle}>Data Security</Link></li>
                   </ul>
                 </div>
               </div>
@@ -74,7 +74,7 @@ const Footer = () => {
                       </div>
                       <div className="info-details">
                         <h6 className="mb-10">Location:</h6>
-                        <p className="m-0" style={paragraphStyle}>Greater Noida, India</p>
+                        <p className="m-0" style={paragraphStyle}>SOFTMECH SOLUTION Office No. 6, Near Cherry County, Greater Noida West UP.</p>
                       </div>
                     </li>
                     <li>
