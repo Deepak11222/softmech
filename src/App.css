@@ -1025,6 +1025,31 @@ figure{
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .client-section .slick-slide {
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-section .slick-slide {
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .client-section .slick-slide {
+    margin-bottom: 70px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .client-section .slick-slide {
+      margin-bottom: 10px; 
+  }
+}
+
+
+
 .section-space-medium {
   padding: 50px 0;
 }
