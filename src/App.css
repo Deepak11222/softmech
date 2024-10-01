@@ -1042,11 +1042,11 @@ figure{
 }
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .client-section .slick-slide {
       margin-bottom: 10px; 
   }
-}
+} */
 
 
 
