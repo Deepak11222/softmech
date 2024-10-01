@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 import './spacing.css';
 import { SiIcomoon } from "react-icons/si";
@@ -65,9 +66,9 @@ const AboutSection = () => {
                 </div>
                 <span className="progress-count">95%</span>
               </div> */}
-              <a className="primary-btn-1 btn-hover mt-50" href="about.html">
+              <Link className="primary-btn-1 btn-hover mt-50" to="/about">
                 about us &nbsp; |<i className="fa fa-arrow-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

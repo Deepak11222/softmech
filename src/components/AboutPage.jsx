@@ -118,12 +118,12 @@ const AboutPage = () => {
                     <p>Our consultancy services guide you in making informed technology choices that align with your business goals.</p>
                   </div>
                 </div>
-                <div className="about-btn-box wow fadeInLeft" data-wow-delay="1s">
+                {/* <div className="about-btn-box wow fadeInLeft" data-wow-delay="1s">
                   <a className="primary-btn-1 btn-hover" href="about.html">
                     about us &nbsp; | <i className="fa fa-arrow-right"></i>
                     <span style={{ top: '147.172px', left: '108.5px' }}></span>
                   </a>
-                </div>
+                </div> */}
               </div>
               {/* Content end */}
             </div>

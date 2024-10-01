@@ -25,6 +25,7 @@ import AboutSection from './About';
 import NewsSection from './NewsSection';
 import ProjectSliderSection from './ProjectSliderSection';
 import ServiceSection from './ServiceSection';
+import TechSection from './ClientSection';
 
 const Main = () => {
   return (
@@ -101,6 +102,7 @@ const Main = () => {
     </section>
 
     <AboutSection/>
+    <TechSection/>
 {/* 
     <section className="help-3-form-section p-relative z-1">
       <div className="small-container">
