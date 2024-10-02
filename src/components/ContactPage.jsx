@@ -1,10 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'; // Import React Icons
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import emailjs from 'emailjs-com';
 import breadcrumbBg1 from '../assets/imgs/resources/page-title-bg-1.png';
 import breadcrumbBg2 from '../assets/imgs/resources/page-title-bg-2.png';
 
 const ContactPage = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_erlc7cw', 'template_zubencn', e.target, 'mQf0YiXCO2Y2Sc1sV')
+    .then((result) => {
+          console.log('EmailJS Result:', result); // Log the result for debugging
+          alert("Email sent successfully!");
+          e.target.reset(); // Reset the form
+      }, (error) => {
+          alert("Failed to send email. Please try again.");
+          console.error("Failed to send email: ", error);
+      });
+  };
+
   return (
     <main>
       {/* Breadcrumb area start */}
@@ -25,8 +40,8 @@ const ContactPage = () => {
                 <div className="breadcrumb__menu">
                   <nav>
                     <ul>
-                    <li><span><Link className='links' href="index.html">Home</Link></span></li>
-                    <i className="fa fa-arrow-right"></i><li><span>Contact</span></li>
+                      <li><span><Link className='links' to="/">Home</Link></span></li>
+                      <i className="fa fa-arrow-right"></i><li><span>Contact</span></li>
                     </ul>
                   </nav>
                 </div>
@@ -48,7 +63,7 @@ const ContactPage = () => {
                   </div>
                   <div className="info">
                     <span>Location</span>
-                    <h4>SOFTMECH SOLUTION Office No. 6, Near Cherry County, Greater Noida West UP.</h4>
+                    <h4>SOFTMECH SOLUTION Office No. 6, Near Cherry County, Greater Noida West UP.</h4>
                   </div>
                 </div>
                 <div className="contact-box mb-30">
@@ -78,27 +93,27 @@ const ContactPage = () => {
                   <h3 className="section-title mt-10">Let’s Get in Touch</h3>
                 </div>
                 <div className="contact-page-form">
-                  <form action="#">
+                  <form onSubmit={sendEmail}>
                     <div className="row">
                       <div className="col-lg-6">
                         <label>Your Name*</label>
-                        <input type="text" placeholder="Your Name*" required />
+                        <input type="text" name="name" placeholder="Your Name*" required />
                       </div>
                       <div className="col-lg-6">
                         <label>Your Email*</label>
-                        <input type="email" placeholder="Your Email*" required />
+                        <input type="email" name="from_email" placeholder="Your Email*" required />
                       </div>
                       <div className="col-lg-6">
                         <label>Your Phone*</label>
-                        <input type="tel" placeholder="Your Phone*" required />
+                        <input type="tel" name="phone" placeholder="Your Phone*" required />
                       </div>
                       <div className="col-lg-6">
                         <label>Subject*</label>
-                        <input type="text" placeholder="Subject*" required />
+                        <input type="text" name="subject" placeholder="Subject*" required />
                       </div>
                       <div className="col-lg-12">
                         <label>Your Message*</label>
-                        <textarea name="message" placeholder="Write Message" required></textarea>
+                        <textarea name="message" placeholder="Write Message" required />
                       </div>
                       <div className="col-lg-12">
                         <button type="submit" className="primary-btn-1 btn-hover">
@@ -117,14 +132,14 @@ const ContactPage = () => {
       <div className="container-fluid g-0 fix">
         <div className="row">
           <div className="col-xxl-12">
-          <div className="contact-map">
-  <iframe 
-    src="https://www.google.com/maps/embed/v1/place?q=Softmech+Solutions,+Office+No.+6,+Near+Cherry+County,+Greater+Noida West UP.&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" 
-    style={{ width: '100%', height: '400px', border: 0 }} 
-    allowFullScreen 
-    loading="lazy"
-  ></iframe>
-</div>
+            <div className="contact-map">
+              <iframe 
+                src="https://www.google.com/maps/embed/v1/place?q=Softmech+Solutions,+Office+No.+6,+Near+Cherry+County,+Greater+Noida+West+UP.&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" 
+                style={{ width: '100%', height: '400px', border: 0 }} 
+                allowFullScreen 
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
