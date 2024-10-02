@@ -117,7 +117,7 @@ const ContactPage = () => {
                       </div>
                       <div className="col-lg-12">
                         <button type="submit" className="primary-btn-1 btn-hover">
-                          Send Now &nbsp; | <i className="icon-right-arrow"></i>
+                          Send &nbsp;
                         </button>
                       </div>
                     </div>
