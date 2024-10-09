@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
+import softmechlogo from '../assets/imgs/logo/softmechlogo.png';
 import shape1 from '../assets/imgs/shapes/shape-50.png';
 import shape2 from '../assets/imgs/footer/shape-f-1.png';
 
@@ -26,7 +27,7 @@ const Footer = () => {
               <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
                 <div className="footer-widget-1">
                   <figure className="image">
-                  <img src="https://softmechsolutions.in/assets/images/logo/logo.png" alt="header logo" />
+                  <img  src={softmechlogo} alt="header logo" />
                   </figure>
                   <p className="mt-40 mb-40" style={paragraphStyle}>
   At Softmech Solutions, we deliver innovative mobile and web solutions, effectively turning your vision into reality across various business sectors worldwide.
@@ -44,9 +45,8 @@ const Footer = () => {
                   <h4 className="mb-30 footer-title" style={{ marginLeft: '15px' }}>Quick Links</h4>
                   <ul className="service-list">
                     <li><i className="fa fa-arrow-right"></i> <Link to="/about" style={linkStyle}>About Us</Link></li>
-                    <li><i className="fa fa-arrow-right"></i> <Link to="/team-details" style={linkStyle}>Our Team</Link></li>
+                    <li><i className="fa fa-arrow-right"></i> <Link to="/team" style={linkStyle}>Our Team</Link></li>
                     <li><i className="fa fa-arrow-right"></i> <Link to="/services" style={linkStyle}>Our Services</Link></li>
-                    <li><i className="fa fa-arrow-right"></i> <Link to="/projects" style={linkStyle}>Projects</Link></li>
                     <li><i className="fa fa-arrow-right"></i> <Link to="/contact" style={linkStyle}>Contact Us</Link></li>
                   </ul>
                 </div>

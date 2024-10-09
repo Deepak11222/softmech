@@ -3,6 +3,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from 'react-router-dom';
 import '../App.css';
 import './spacing.css';
+import softmechlogo from '../assets/imgs/logo/softmechlogo.png';
 import '../assets/css/meanmenu.css';
 import '../assets/css/animate.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -37,7 +38,7 @@ const Header = () => {
               <div className="header-left">
                 <div className="header-logo">
                   <Link className='links' to="/">
-                    <img src="https://softmechsolutions.in/assets/images/logo/logo.png" alt="header logo" />
+                    <img src={softmechlogo} alt="header logo" />
                   </Link>
                 </div>
               </div>
@@ -49,31 +50,23 @@ const Header = () => {
   <li className="has-dropdown active">
     <Link className='links' to="/">Home</Link>
   </li>
-  <li><Link className='links' to="/about">About</Link></li>
-  <li>
-    <Link className='links' to="/services">Services</Link>
-    <ul className="submenu">
-      <li><Link className='links' to="/services">Services</Link></li>
-      <li><Link className='links' to="/service-details">Service Details</Link></li>
-    </ul>
-  </li>
   <li className="has-dropdown">
-    <Link className='links' to="/blog-grid">Pages</Link>
+    <Link className='links' to="#">Company</Link>
     <ul className="submenu">
       <li className="has-dropdown">
-        <Link className='links' to="/projects">Projects</Link>
+        <Link className='links' to="/about">About Us</Link>
         <ul className="submenu">
-          <li><Link className='links' to="/projects">Projects</Link></li>
-          <li><Link className='links' to="/project-details">Projects Details</Link></li>
+          {/* <li><Link className='links' to="/project-details">Projects Details</Link></li> */}
         </ul>
       </li>
       <li><Link className='links' to="/team">Team</Link></li>
-      <li><Link className='links' to="/team-details">Team Details</Link></li>
       {/* <li><Link className='links' to="/faq">Faq's</Link></li> */}
-      <li><Link className='links' to="/error">Error Page</Link></li>
     </ul>
+  </li>  <li>
+    <Link className='links' to="/services">Our Services</Link>
+    
   </li>
-  {/* <li className="has-dropdown">
+   {/* <li className="has-dropdown">
     <Link className='links' to="/blog-grid">Blog</Link>
     <ul className="submenu">
       <li><Link className='links' to="/blog-standard">Blog Default</Link></li>
@@ -81,7 +74,7 @@ const Header = () => {
       <li><Link className='links' to="/blog-details">Blog Details</Link></li>
     </ul>
   </li> */}
-  <li><Link className='links' to="/contact">Contact</Link></li>
+  <li><Link className='links' to="/contact">Contact Us</Link></li>
 </ul>
 
                     </nav>
@@ -160,7 +153,7 @@ const Header = () => {
       <div className="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
         <div className="offcanvas__logo">
           <Link to="dashboard.html">
-          <img src="https://softmechsolutions.in/assets/images/logo/logo.png" alt="header logo" />
+          <img src={softmechlogo} alt="header logo" />
           </Link>
         </div>
         <div className="offcanvas__close">
@@ -191,41 +184,24 @@ const Header = () => {
             <li><Link to="dark-home.html">Home Dark</Link></li> */}
           </ul>
         </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="#!" onClick={() => toggleSubMenu(1)} style={{ cursor: 'pointer' }}>Services</Link>
-          <ul className="submenu" style={{ display: subMenuOpen[1] ? 'block' : 'none', padding: '0' }}>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/service-details">Service Details</Link></li>
-          </ul>
-        </li>
+        
         <li className="has-dropdown">
-          <Link to="#!" onClick={() => toggleSubMenu(2)} style={{ cursor: 'pointer' }}>Pages</Link>
+          <Link to="#!" onClick={() => toggleSubMenu(2)} style={{ cursor: 'pointer' }}>Company</Link>
           <ul className="submenu" style={{ display: subMenuOpen[2] ? 'block' : 'none', padding: '0' }}>
             <li className="has-dropdown">
-              <Link to="#!" onClick={() => toggleSubMenu(3)} style={{ cursor: 'pointer' }}>Projects</Link>
+              <Link to="/about" onClick={() => toggleSubMenu(3)} style={{ cursor: 'pointer' }}>About Us</Link>
               <ul className="submenu" style={{ display: subMenuOpen[3] ? 'block' : 'none', padding: '0' }}>
-                <li><Link to="/projects">Projects</Link></li>
-                <li><Link to="/project-details">Projects Details</Link></li>
+                <li><Link to="/team">Team</Link></li>
               </ul>
             </li>
-            <li><Link to="/team">Team</Link></li>
-            <li><Link to="/team-details">Team Details</Link></li>
             {/* <li><Link to="/faq">Faq's</Link></li> */}
           </ul>
         </li>
-        {/* <li className="has-dropdown">
-          <Link to="#!" onClick={() => toggleSubMenu(4)} style={{ cursor: 'pointer' }}>Blog</Link>
-          <ul className="submenu" style={{ display: subMenuOpen[4] ? 'block' : 'none', padding: '0' }}>
-            <li><Link to="blog-standard.html">Blog Default</Link></li>
-            <li><Link to="blog-grid.html">Blog Grid</Link></li>
-            <li><Link to="blog-details.html">Blog Details</Link></li>
-          </ul>
-        </li> */}
+        <li>
+          <Link to="/services" onClick={() => toggleSubMenu(1)} style={{ cursor: 'pointer' }}>Our Services</Link>
+        </li>
         <li className="mean-last">
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
         </nav>

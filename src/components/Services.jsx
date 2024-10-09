@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MdMiscellaneousServices } from "react-icons/md";
 import { MdSecurity } from 'react-icons/md'; // Safety and Reliability
 import { MdAnnouncement } from 'react-icons/md'; // Mission Statement
@@ -33,7 +34,7 @@ const Services = () => {
                 <div className="breadcrumb__menu">
                   <nav>
                     <ul>
-                      <li><span><a className='links' href="index.html">Home</a></span></li>
+                      <li><span><Link className='links' to="/">Home</Link></span></li>
                       <i className="fa fa-arrow-right"></i><li><span>Services</span></li>
                     </ul>
                   </nav>
@@ -59,9 +60,9 @@ const Services = () => {
                   <div className="icon-box">
                     <img src={icon2} alt="IT Consultancy" />
                   </div>
-                  <h4 className="mb-15"><a className='link' href="service-details.html">IT Consultancy</a></h4>
+                  <h4 className="mb-15"><Link className='link' to="#">IT Consultancy</Link></h4>
                   <p className="mb-25">We provide expert IT consultancy services to help you navigate complex technology decisions and align IT strategy with your business goals.</p>
-                  <a href="service-details.html" className="linked" style={{fontSize:'20px'}}>Read More <i className="fa fa-arrow-right"></i></a>
+                  <Link to="#" className="linked" style={{fontSize:'20px'}}>Read More <i className="fa fa-arrow-right"></i></Link>
                 </div>
               </div>
             </div>
@@ -75,9 +76,9 @@ const Services = () => {
                   <div className="icon-box">
                     <img src={icon4} alt="App Development" />
                   </div>
-                  <h4 className="mb-15"><a className='link' href="service-details.html">App Development</a></h4>
+                  <h4 className="mb-15"><Link className='link' to="#">App Development</Link></h4>
                   <p className="mb-25">Our team develops high-quality, scalable mobile applications tailored to your business needs, ensuring optimal performance on all devices.</p>
-                  <a href="service-details.html" className="linked" style={{fontSize:'20px'}}>Read More <i className="fa fa-arrow-right"></i></a>
+                  <Link to="#" className="linked" style={{fontSize:'20px'}}>Read More <i className="fa fa-arrow-right"></i></Link>
                 </div>
               </div>
             </div>
@@ -91,9 +92,9 @@ const Services = () => {
                   <div className="icon-box">
                     <img src={icon5} alt="Database Security" />
                   </div>
-                  <h4 className="mb-15"><a className='link' href="service-details.html">Database Security</a></h4>
+                  <h4 className="mb-15"><Link className='link' to="#">Database Security</Link></h4>
                   <p className="mb-25">We implement robust security measures to protect your databases from unauthorized access and breaches, ensuring data integrity.</p>
-                  <a href="service-details.html" className="linked" style={{fontSize:'20px'}}>Read More <i className="fa fa-arrow-right"></i></a>
+                  <Link to="#" className="linked" style={{fontSize:'20px'}}>Read More <i className="fa fa-arrow-right"></i></Link>
                 </div>
               </div>
             </div>
@@ -107,9 +108,9 @@ const Services = () => {
                   <div className="icon-box">
                     <img src={icon6} alt="Cloud Services" />
                   </div>
-                  <h4 className="mb-15"><a className='link' href="service-details.html">Cloud Services</a></h4>
+                  <h4 className="mb-15"><Link className='link' to="#">Cloud Services</Link></h4>
                   <p className="mb-25">Our cloud solutions help businesses enhance flexibility, scalability, and efficiency while reducing infrastructure costs.</p>
-                  <a href="service-details.html" className="linked" style={{fontSize:'20px'}}>Read More <i className="fa fa-arrow-right"></i></a>
+                  <Link to="#" className="linked" style={{fontSize:'20px'}}>Read More <i className="fa fa-arrow-right"></i></Link>
                 </div>
               </div> 
             </div>
@@ -123,9 +124,9 @@ const Services = () => {
                   <div className="icon-box">
                     <img src={icon2} alt="Network Security" />
                   </div>
-                  <h4 className="mb-15"><a className='link' href="service-details.html">Network Security</a></h4>
+                  <h4 className="mb-15"><Link className='link' to="#">Network Security</Link></h4>
                   <p className="mb-25">Protect your network from threats with our advanced security solutions designed to safeguard your data and infrastructure.</p>
-                  <a href="service-details.html" className="linked" style={{fontSize:'20px'}}>Read More <i className="fa fa-arrow-right"></i></a>
+                  <Link to="#" className="linked" style={{fontSize:'20px'}}>Read More <i className="fa fa-arrow-right"></i></Link>
                 </div>
               </div>
             </div>
@@ -139,9 +140,9 @@ const Services = () => {
                   <div className="icon-box">
                     <img src={icon4} alt="IT Support" />
                   </div>
-                  <h4 className="mb-15"><a className='link' href="service-details.html">IT Support</a></h4>
+                  <h4 className="mb-15"><Link className='link' to="#">IT Support</Link></h4>
                   <p className="mb-25">Our dedicated IT support team ensures your systems run smoothly, providing 24/7 assistance and proactive maintenance.</p>
-                  <a href="service-details.html" className="linked" style={{fontSize:'20px'}}>Read More <i className="fa fa-arrow-right"></i></a>
+                  <Link to="#" className="linked" style={{fontSize:'20px'}}>Read More <i className="fa fa-arrow-right"></i></Link>
                 </div>
               </div>
             </div>
@@ -168,7 +169,7 @@ const Services = () => {
                 </div>
                 <div className="content">
                   <h5>
-                    <a className='link' href="services.html">Comprehensive Services</a>
+                    <Link className='link' to="#">Comprehensive Services</Link>
                   </h5>
                   <p>Our diverse range of services is tailored to meet the unique needs of each client, ensuring comprehensive support and solutions.</p>
                 </div>
@@ -181,7 +182,7 @@ const Services = () => {
                 </div>
                 <div className="content">
                   <h5>
-                    <a className='link'  href="services.html">Our Mission</a>
+                    <Link className='link'  to="#">Our Mission</Link>
                   </h5>
                   <p>At SoftMech Solutions, we strive to deliver innovative technology solutions that empower businesses and drive success.</p>
                 </div>
@@ -194,7 +195,7 @@ const Services = () => {
                 </div>
                 <div className="content">
                   <h5>
-                    <a className='link'  href="services.html">Safety and Reliability</a>
+                    <Link className='link'  to="#">Safety and Reliability</Link>
                   </h5>
                   <p>We prioritize safety and reliability in all our solutions, ensuring peace of mind for our clients through robust security measures.</p>
                 </div>

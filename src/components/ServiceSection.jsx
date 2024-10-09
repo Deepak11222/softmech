@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -113,21 +114,21 @@ const ServiceSection = () => {
                 <Slider {...settings}>
                     {services.map((service, index) => (
                         <div key={index} className="service-3-box-area p-relative">
-                            <a className="image w-img" href={service.link}>
+                            <Link className="image w-img" to="#">
                                 <img src={service.img} alt={service.title} />
-                            </a>
+                            </Link>
                             <div className="inner text-center">
                                 <div className="content-box">
                                     <div className="icon-box">
                                         <img src={service.icon} alt="icon" />
                                     </div>
                                     <h4>
-                                        <a className="linked" href={service.link}>{service.title}</a>
+                                        <Link className="linked" to="#">{service.title}</Link>
                                     </h4>
                                     <p className="mb-25">{service.description}</p>
                                 </div>
                                 <div className="btn-area">
-                                    <a className='linked' href={service.link}>Service details <i className="icon-arrow-right-double"></i></a>
+                                    <Link className='linked' to="#">Service details <i className="icon-arrow-right-double"></i></Link>
                                 </div>
                             </div>
                         </div>

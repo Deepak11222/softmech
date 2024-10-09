@@ -39,7 +39,7 @@ const Main = () => {
             {/* <div className="shape-1" style={{ backgroundImage: `url(${shape1})` }}></div> */}
             <div className="shape-2" style={{ backgroundImage: `url(${shape2})` }}></div>
               <div className="shape-3 float-bob-y" style={{ backgroundImage: 'url(assets/imgs/shapes/shape-41.png)' }}></div>
-              <div className="banner-area-2 img-custom-anim-left animated" style={{ animationDelay: '2000ms' }}>
+              <div className="banner-area-2 img-custom-anim-left animated">
                 <span className="p-relative banner-sub-title no-border"><SiIcomoon style={{ color: '#3c72fc' }} /> TECHNOLOGY RELATED CONSULTANCY</span>
                 <h1 className="banner-title">Welcome to Softmech Solutions</h1>
                 <p className="banner-text">

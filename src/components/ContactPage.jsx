@@ -88,9 +88,9 @@ const ContactPage = () => {
             </div>
             <div className="col-xxl-8 col-xl-8 col-lg-8">
               <div className="contact-page-form-area">
-                <div className="title-box mb-40">
-                  <span className="section-sub-title">LET’S TALK</span>
-                  <h3 className="section-title mt-10">Let’s Get in Touch</h3>
+                <div className="title-box">
+                  <span className="section-sub-title" style={{fontSize:'10px'}}>LET’S TALK</span>
+                  <h5 className="section-title">Let’s Get in Touch</h5>
                 </div>
                 <div className="contact-page-form">
                   <form onSubmit={sendEmail}>
@@ -115,8 +115,8 @@ const ContactPage = () => {
                         <label>Your Message*</label>
                         <textarea name="message" placeholder="Write Message" required />
                       </div>
-                      <div className="col-lg-12">
-                        <button type="submit" className="primary-btn-1 btn-hover">
+                      <div className="col-lg-10" style={{borderRadius:'5px'}}>
+                        <button type="submit" className="primary-btn-2 btn-hover"style={{borderRadius:'5px'}}>
                           Send &nbsp;
                         </button>
                       </div>

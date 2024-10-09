@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MdMiscellaneousServices } from "react-icons/md";
 import { MdSecurity } from 'react-icons/md'; // Safety and Reliability
 import { MdAnnouncement } from 'react-icons/md'; // Mission Statement
@@ -40,7 +41,7 @@ const AboutPage = () => {
                 <div className="breadcrumb__menu">
                   <nav>
                     <ul>
-                    <li><span><a className='links' href="index.html">Home</a></span></li>
+                    <li><span><Link className='links' to="#">Home</Link></span></li>
                     <i className="fa fa-arrow-right"></i><li><span>About</span></li>
                     </ul>
                   </nav>
@@ -71,11 +72,7 @@ const AboutPage = () => {
                 <div className="image-2-area">
                   <div className="image-2 p-relative">
                     <img src={aboutImage6} alt="Innovative Solutions" />
-                    <div className="play-btn">
-                      <div className="video_player_btn">
-                        <a href="https://www.youtube.com/watch?v=eEzD-Y97ges" className="popup-video"><i className="icon-play"></i></a>
-                      </div>
-                    </div>
+                    
                   </div>
                 </div>
                 <div className="working-area float-bob-y">
@@ -105,7 +102,7 @@ const AboutPage = () => {
                     <img src={aboutImage7} alt="Business Growth" />
                   </div>
                   <div className="content">
-                    <h5><a className='linked' href="about.html">Business Growth</a></h5>
+                    <h5><Link className='linked' to="#">Business Growth</Link></h5>
                     <p>We empower businesses to scale by leveraging the latest technologies and best practices in the IT sector.</p>
                   </div>
                 </div>
@@ -114,16 +111,10 @@ const AboutPage = () => {
                     <img src={aboutImage8} alt="Technology Consultancy" />
                   </div>
                   <div className="content">
-                    <h5><a className='linked' href="about.html">Technology Consultancy</a></h5>
+                    <h5><Link className='linked' to="#">Technology Consultancy</Link></h5>
                     <p>Our consultancy services guide you in making informed technology choices that align with your business goals.</p>
                   </div>
                 </div>
-                {/* <div className="about-btn-box wow fadeInLeft" data-wow-delay="1s">
-                  <a className="primary-btn-1 btn-hover" href="about.html">
-                    about us &nbsp; | <i className="fa fa-arrow-right"></i>
-                    <span style={{ top: '147.172px', left: '108.5px' }}></span>
-                  </a>
-                </div> */}
               </div>
               {/* Content end */}
             </div>
@@ -150,7 +141,7 @@ const AboutPage = () => {
                 </div>
                 <div className="content">
                   <h5>
-                    <a className='link' href="services.html">Commercial Service</a>
+                    <Link className='link' to="#">Commercial Service</Link>
                   </h5>
                   <p>Our diverse range of services is tailored to meet the unique needs of each client, ensuring comprehensive support and solutions.</p>
                 </div>
@@ -163,7 +154,7 @@ const AboutPage = () => {
                 </div>
                 <div className="content">
                   <h5>
-                    <a className='link'  href="services.html">Mission Statement</a>
+                    <Link className='link'  to="#">Mission Statement</Link>
                   </h5>
                   <p>At SoftMech Solutions, we strive to deliver innovative technology solutions that empower businesses and drive success.</p>
                 </div>
@@ -176,7 +167,7 @@ const AboutPage = () => {
                 </div>
                 <div className="content">
                   <h5>
-                    <a className='link'  href="services.html">Safety and Reliability</a>
+                    <Link className='link'  to="#">Safety and Reliability</Link>
                   </h5>
                   <p>We prioritize safety and reliability in all our solutions, ensuring peace of mind for our clients through robust security measures.</p>
                 </div>
@@ -264,12 +255,12 @@ const AboutPage = () => {
       <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
         <div className="team-area-box p-relative mb-60 wow fadeInLeft" data-wow-delay=".7s">
           <figure className="image w-img p-relative">
-            <img src={team1} alt="Kristin Watson" />
+            <img src={team2} alt="Kristin Watson" />
           </figure>
           <div className="content text-center">
             <div className="author-info">
-              <h5 className="mb-5"><a className='link' href="team-details.html">Kristin Watson</a></h5>
-              <span>Customer Support Manager</span>
+              <h5 className="mb-5"><Link className='link' to="#">Shital Dubey</Link></h5>
+              <span>CEO</span>
             </div>
           </div>
         </div>
@@ -282,8 +273,8 @@ const AboutPage = () => {
           </figure>
           <div className="content text-center">
             <div className="author-info">
-              <h5 className="mb-5"><a className='link' href="team-details.html">Annette Black</a></h5>
-              <span>Web Designer</span>
+              <h5 className="mb-5"><Link className='link' to="#">Anshuk</Link></h5>
+              <span>COO</span>
             </div>
           </div>
         </div>
@@ -296,8 +287,8 @@ const AboutPage = () => {
           </figure>
           <div className="content text-center">
             <div className="author-info">
-              <h5 className="mb-5"><a className='link' href="team-details.html">Ralph Edwards</a></h5>
-              <span>UI/UX Designer</span>
+              <h5 className="mb-5"><Link className='link' to="#">Sunil Sharma</Link></h5>
+              <span>App Developer</span>
             </div>
           </div>
         </div>

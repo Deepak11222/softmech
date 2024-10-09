@@ -26,12 +26,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/service-details" element={<ServiceDetails />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/project-details" element={<ProjectDetails />} />
         <Route path="/team" element={<TeamSection />} />
-        <Route path="/team-details" element={<TeamMemberDetails />} />
-        <Route path="/blog-grid" element={<BlogPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />

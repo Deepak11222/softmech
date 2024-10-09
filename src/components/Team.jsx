@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import teamImg1 from '../assets/imgs/team/team-1.jpg';
 import teamImg2 from '../assets/imgs/team/team-2.jpg';
 import teamImg3 from '../assets/imgs/team/team-3.jpg';
@@ -10,35 +11,35 @@ import titleBg2 from '../assets/imgs/resources/page-title-bg-2.png';
 
 const teamMembers = [
   {
-    name: 'Kristin Watson',
-    role: 'Customer support',
-    img: teamImg1,
-  },
-  {
-    name: 'Ralph Edwards',
-    role: 'Web Designer',
-    img: teamImg2,
-  },
-  {
-    name: 'Annette Black',
-    role: 'UI/UX Designer',
-    img: teamImg3,
-  },
-  {
-    name: 'Albert Flores',
-    role: 'Software engineer',
+    name: 'Shital Dubey',
+    role: 'CEO',
     img: teamImg4,
   },
   {
-    name: 'Dianne Russell',
-    role: 'Marketing manager',
-    img: teamImg5,
+    name: 'Abhishek Tiwari',
+    role: 'CFO',
+    img: teamImg4,
   },
   {
-    name: 'Eleanor Pena',
-    role: 'Programmer',
-    img: teamImg6,
+    name: 'Anshuk',
+    role: 'BDO',
+    img: teamImg4,
   },
+  {
+    name: 'Sunil Sharma',
+    role: 'App Developer',
+    img: teamImg2,
+  },
+  {
+    name: 'Deepak Pal',
+    role: 'Web Developer',
+    img: teamImg3,
+  },
+  {
+    name: 'Vijay',
+    role: 'Web Developer',
+    img: teamImg4,
+  }
 ];
 
 const TeamSection = () => {
@@ -62,8 +63,8 @@ const TeamSection = () => {
                 <div className="breadcrumb__menu">
                   <nav>
                     <ul>
-                    <li><span><a className='links' href="index.html">Home</a></span></li>
-                    <i className="fa fa-arrow-right"></i><li><span>Team</span></li>
+                      <li><span><Link className="links" to="/">Home</Link></span></li>
+                      <i className="fa fa-arrow-right"></i><li><span>Team</span></li>
                     </ul>
                   </nav>
                 </div>
@@ -87,18 +88,18 @@ const TeamSection = () => {
                   <div className="content">
                     <div className="author-info">
                       <h5 className="mb-5">
-                        <a href="team-details.html">{member.name}</a>
+                        <Link to="/team-details">{member.name}</Link>
                       </h5>
                       <span>{member.role}</span>
                     </div>
-                    <div className="social-links p-relative">
+                    {/* <div className="social-links p-relative">
                       <span><i className="icon-share"></i></span>
                       <ul>
                         <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
                         <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                       </ul>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
