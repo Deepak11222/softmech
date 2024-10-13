@@ -37,12 +37,12 @@ const AboutPage = () => {
           <div className="row justify-content-center">
             <div className="col-xxl-12">
               <div className="breadcrumb__wrapper p-relative">
-                <h2 className="breadcrumb__title">About</h2>
+                <h2 className="breadcrumb__title">About Us</h2>
                 <div className="breadcrumb__menu">
                   <nav>
                     <ul>
-                    <li><span><Link className='links' to="#">Home</Link></span></li>
-                    <i className="fa fa-arrow-right"></i><li><span>About</span></li>
+                    <li><span><Link className='links' to="/">Home</Link></span></li>
+                    <i className="fa fa-arrow-right"></i><li><span>About Us</span></li>
                     </ul>
                   </nav>
                 </div>

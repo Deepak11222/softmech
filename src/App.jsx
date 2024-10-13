@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'; // Only import Route and Route
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'font-awesome/css/font-awesome.min.css';
-import Navbar from './components/abcd';
+import Navbar from './components/Header';
 import Main from './components/Mainarea';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';

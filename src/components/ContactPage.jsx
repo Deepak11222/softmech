@@ -36,12 +36,12 @@ const ContactPage = () => {
           <div className="row justify-content-center">
             <div className="col-xxl-12">
               <div className="breadcrumb__wrapper p-relative">
-                <h2 className="breadcrumb__title">Contact</h2>
+                <h2 className="breadcrumb__title">Contact Us</h2>
                 <div className="breadcrumb__menu">
                   <nav>
                     <ul>
                       <li><span><Link className='links' to="/">Home</Link></span></li>
-                      <i className="fa fa-arrow-right"></i><li><span>Contact</span></li>
+                      <i className="fa fa-arrow-right"></i><li><span>Contact Us</span></li>
                     </ul>
                   </nav>
                 </div>
@@ -62,16 +62,18 @@ const ContactPage = () => {
                     <FaMapMarkerAlt /> {/* Location Icon */}
                   </div>
                   <div className="info">
-                    <span>Location</span>
-                    <h4>SOFTMECH SOLUTION Office No. 6, Near Cherry County, Greater Noida West UP.</h4>
-                  </div>
+                    <span style={{fontSize:"18px",fontWeight:"bolder"}}>Location</span>
+                    <h4>
+  SOFTMECH SOLUTION<br />
+  Office No. 6, Near Cherry County, Greater Noida West UP.
+</h4>                  </div>
                 </div>
                 <div className="contact-box mb-30">
                   <div className="icon-1">
                     <FaPhoneAlt /> {/* Phone Icon */}
                   </div>
                   <div className="info">
-                    <span>Call Us 7/24</span>
+                    <span style={{fontSize:"18px",fontWeight:"bolder"}}>Call Us 7/24</span>
                     <h4><Link to="tel:+919717656550">+919717656550</Link></h4>
                   </div>
                 </div>
@@ -80,8 +82,8 @@ const ContactPage = () => {
                     <FaEnvelope /> {/* Email Icon */}
                   </div>
                   <div className="info">
-                    <span>Make A quote</span>
-                    <h4><Link to="#">info@softmechsolutiongmail.com</Link></h4>
+                    <span style={{fontSize:"18px",fontWeight:"bolder"}}>Make A quote</span>
+                    <h4><Link to="#">info@softmechsolutions.in</Link></h4>
                   </div>
                 </div>
               </div>

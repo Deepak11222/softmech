@@ -4,14 +4,12 @@ import teamImg1 from '../assets/imgs/team/team-1.jpg';
 import teamImg2 from '../assets/imgs/team/team-2.jpg';
 import teamImg3 from '../assets/imgs/team/team-3.jpg';
 import teamImg4 from '../assets/imgs/team/team-4.jpg';
-import teamImg5 from '../assets/imgs/team/team-5.jpg';
-import teamImg6 from '../assets/imgs/team/team-6.jpg';
 import titleBg1 from '../assets/imgs/resources/page-title-bg-1.png';
 import titleBg2 from '../assets/imgs/resources/page-title-bg-2.png';
 
 const teamMembers = [
   {
-    name: 'Shital Dubey',
+    name: 'Shital Pratap Dubey',
     role: 'CEO',
     img: teamImg4,
   },
@@ -21,7 +19,7 @@ const teamMembers = [
     img: teamImg4,
   },
   {
-    name: 'Anshuk',
+    name: 'Anshuk Gupta',
     role: 'BDO',
     img: teamImg4,
   },
@@ -59,12 +57,12 @@ const TeamSection = () => {
           <div className="row justify-content-center">
             <div className="col-xxl-12">
               <div className="breadcrumb__wrapper p-relative">
-                <h2 className="breadcrumb__title">Team</h2>
+                <h2 className="breadcrumb__title">Our Team</h2>
                 <div className="breadcrumb__menu">
                   <nav>
                     <ul>
                       <li><span><Link className="links" to="/">Home</Link></span></li>
-                      <i className="fa fa-arrow-right"></i><li><span>Team</span></li>
+                      <i className="fa fa-arrow-right"></i><li><span>Our Team</span></li>
                     </ul>
                   </nav>
                 </div>
@@ -76,30 +74,25 @@ const TeamSection = () => {
       {/* Breadcrumb area end */}
 
       {/* Team area start */}
-      <section className="team-section p-relative section-space">
-        <div className="small-container">
-          <div className="row g-4">
+      <section className="team-experts-wrapper section-padding">
+        <div className="container">
+          <div className="col-12 col-xl-12 text-center">
+            <div className="section-title" style={{ marginBottom: '30px' }}>
+              <span style={{ display: 'inline-block', marginBottom: '30px' }}>Our Amazing Team</span>
+            </div>
+          </div>
+          
+          <div className="row justify-content-center">
             {teamMembers.map((member, index) => (
-              <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 mb-15" key={index}>
-                <div className="team-area-box p-relative mb-60 wow fadeInLeft" data-wow-delay=".7s">
-                  <figure className="image w-img p-relative">
-                    <img src={member.img} alt={member.name} />
-                  </figure>
-                  <div className="content">
-                    <div className="author-info">
-                      <h5 className="mb-5">
-                        <Link to="/team-details">{member.name}</Link>
-                      </h5>
-                      <span>{member.role}</span>
-                    </div>
-                    {/* <div className="social-links p-relative">
-                      <span><i className="icon-share"></i></span>
-                      <ul>
-                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                      </ul>
-                    </div> */}
+              <div className="col-md-6 col-xl-3" key={index}>
+                <div className="single-team-member" style={{ textAlign: 'center', padding: '10px', border: '1px solid #ddd', borderRadius: '12px', marginBottom: '15px', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)', transition: 'transform 0.3s', maxHeight: '350px', overflow: 'hidden' }}> {/* Reduced maxHeight */}
+                  <img 
+                    src={member.img} 
+                    alt={member.name} 
+                    style={{ width: '100%', height: 'auto', maxHeight: '260px', objectFit: 'cover', marginBottom: '8px' }} /> {/* Reduced maxHeight of image */}
+                  <div className="member-info" style={{ marginTop: '3px' }}>
+                    <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '5px' }}>{member.name}</h4>
+                    <p style={{ margin: '3px 0', color: '#777', fontSize: '14px' }}>{member.role}</p>
                   </div>
                 </div>
               </div>

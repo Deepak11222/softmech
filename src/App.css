@@ -1009,7 +1009,7 @@ figure{
 .section-space-bottom {
   padding-bottom: 120px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1499px) {
   .section-space-bottom {
     padding-bottom: 100px;
   }
@@ -1025,7 +1025,7 @@ figure{
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1499px) {
   .client-section .slick-slide {
     margin-bottom: 100px;
   }
@@ -1593,7 +1593,7 @@ figure{
   padding: 0 25px;
   padding-bottom: 11px;
   padding-top: 11px;
-  width: 100%;
+  width: 50%;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -1624,7 +1624,7 @@ figure{
 }
 .main-menu ul li .mega-menu {
   position: absolute;
-  top: 100%;
+  top: 10%;
   left: 0;
   padding: 40px 225px;
   background: #fff;
@@ -5690,7 +5690,7 @@ width: 100%;
 }
 
 
-@media only screen and (max-width: 1399px){ 
+@media only screen and (max-width: 1499px){ 
 
 .banner-3-experience,
 .banner-3-image-area .content-1,
@@ -5723,7 +5723,7 @@ width: 100%;
 /*----------------------------------------*/
 
 .about-three-section{
-  padding-bottom: 240px;
+  padding-bottom: 105px;
 }
 
 .about-three-section .bg-shape {
@@ -5917,8 +5917,8 @@ font-size: 14px;
 /*----------------------------------------*/
 
 .service-section-three {
-  padding-top: 240px;
-  margin-top: -120px;
+  padding-top: 24px;
+  /* margin-top: 120px; */
 }
 
 .service-section-three .shape-1 {
